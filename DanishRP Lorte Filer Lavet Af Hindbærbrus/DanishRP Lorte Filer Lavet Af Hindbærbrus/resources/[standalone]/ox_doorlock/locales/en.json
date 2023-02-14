@@ -1,0 +1,16 @@
+{
+  "unlocked_door": "Låst døren op",
+  "locked_door": "Låst døren",
+  "lock_door": "[E] Lås Dør",
+  "unlock_door": "[E] Lås dør op",
+  "door_lock": "Dør Lås",
+  "passcode": "Kodeord",
+  "lockpick_broke": "Your lockpick broke",
+  "pick_lock": "Pick lock",
+  "add_lock": "Tilføj Lås",
+  "edit_lock": "Redigere Lås",
+  "remove_lock": "Fjern Lås",
+  "cannot_unlock": "Du kan ikke låse denne dør op",
+  "cannot_lock": "Du kan ikke låse denne dør",
+  "create_modify_lock": "Create a doorlock, or modify an existing one"
+}

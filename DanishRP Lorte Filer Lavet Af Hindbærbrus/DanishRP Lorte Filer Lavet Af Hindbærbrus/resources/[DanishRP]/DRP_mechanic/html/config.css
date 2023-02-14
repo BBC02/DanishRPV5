@@ -1,0 +1,64 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+#clipboard{
+    width: 60vh;
+    height: 80vh;
+
+    /* background-color: black; */
+    background-image: url('./img/clipboard.png');
+    background-size: 100%;
+
+    padding: 11vh 10vh;
+}
+
+/* Next button */
+.next{
+    font-size: 3vh;
+
+    background-color: gray;
+    padding: 2vh;
+    color: whitesmoke;
+}
+
+/* Previous button */
+.preview{
+    font-size: 3vh;
+
+    background-color: gray;
+    padding: 2vh;
+    color: whitesmoke;
+}
+
+/* Button color when the mouse is over them */
+.next:hover, .preview:hover{
+    background-color: rgb(55, 55, 55);
+}
+
+/* Page number at the top of the clipboard */
+.page{
+    font-size: 2vh;
+    color: gray;
+}
+
+/* Clipboard search menu */
+#menu ul li{
+    background-color: rgb(38, 38, 38);
+
+    margin-top: 1vh;
+    padding: 1vh;
+
+    color: rgb(238, 238, 238);
+    font-size: 2vh;
+
+    border-radius: 5px;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Item color when the mouse is on top */
+#menu ul li:hover{
+    background-color: rgb(109, 3, 3);
+}

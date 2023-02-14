@@ -1,0 +1,4 @@
+INSERT INTO `items` (`name`, `label`, `weight`, `rare`, `can_remove`, `degrademodifier`, `unique`, `description`) VALUES ('fiskestang', 'Fiskestang', '0', '0', '1', '1', '0', NULL);
+INSERT INTO `items` (`name`, `label`, `weight`, `rare`, `can_remove`, `degrademodifier`, `unique`, `description`) VALUES ('fiskekrog', 'Fiskekrog', '0', '0', '1', '1', '0', NULL);
+INSERT INTO `items` (`name`, `label`, `weight`, `rare`, `can_remove`, `degrademodifier`, `unique`, `description`) VALUES ('fiskeline', 'Fiskeline', '0', '0', '1', '1', '0', NULL);
+INSERT INTO `items` (`name`, `label`, `weight`, `rare`, `can_remove`, `degrademodifier`, `unique`, `description`) VALUES ('storspand', 'Stor spand', '0', '0', '1', '1', '0', NULL);

@@ -1,0 +1,186 @@
+<!-- /* Need Help? Join my discord @ discord.gg/yWddFpQ */ -->
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+	<div id="bg">
+	</div>
+	<div class="container-fluid h-100 blure no-gutter">
+		<div class="row h-100 no-gutter">
+			<div class="col-3 mx-auto magis" id="blackbar">
+				<div class="animated fadeInDownBig delay-1s card audioCenter">
+					<div class="card-header">
+						FEATURES
+					</div>
+					<div class="card-body">
+						<ui class="text-left">
+							<li class="text-left">Unikke scripts</li>
+							<li class="text-left">Specialdesignede køretøjer</li>
+							<li class="text-left">Unikt og brugervenligt UI</li>
+							<li class="text-left">Samt meget mere</li>
+						</ui>
+					</div>
+				</div>
+
+				<div class="animated fadeInLeftBig delay-3s card audioCenter">
+					<div class="card-header">
+						INFORMATION
+					</div>
+					<div class="card-body text-left">
+						<ui class="text-left">
+							<li class="text-left">Regler på Discorden</li>
+							<li class="text-left">Join Discorden! discord.gg/DanishRP</li>
+							<li class="text-left">Support foregår på Discord</li>
+							<li class="text-left">Husk ingame snak foregår over PMA-VOICE</li>
+						</ui>
+					</div>
+				</div>
+			</div>
+			<div class="col-6" id="blue">
+				<div class="container h-100">
+					<div class="row align-items-center h-100">
+						<div class="col-6 mx-auto">
+							<img class="logo" src="assets/img/logo.png">
+							<div class="mx-auto"><svg id="loading">
+
+								</svg></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-3 magis2" id="blue">
+				<div class="animated rotateInUpRight delay-5s card audioCenter cardOne">
+					<div class="card-header">
+						VIGTIGE TASTER
+					</div>
+					<div class="card-body card-padding text-left">
+						<table class="table table-borderless table-condensed">
+							<thead>
+								<tr>
+									<th scope="col">KNAP</th>
+									<th scope="col">HANDLING</th>
+									<th scope="col">BESKRIVELSE</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>F1</td>
+									<td>Telefon</td>
+									<td>Åbner din telefon</td>
+								</tr>
+								<tr>
+									<td>F2</td>
+									<td>Inventar</td>
+									<td>Åbner dit inventar</td>
+								</tr>
+								<tr>
+									<td>F6</td>
+									<td>Inventar</td>
+									<td>Job-Menu</td>
+								</tr>
+								<tr>
+									<td>ALT</td>
+									<td>Kommunikation</td>
+									<td>Radio & Telefon snak</td>
+								</tr>
+								<tr>
+									<td>Z</td>
+									<td>RP-Menu</td>
+									<td>Animationer mm.</td>
+								</tr>
+								<tr>
+									<td>.</td>
+									<td>Information</td>
+									<td>Oversigt over penge og job</td>
+								</tr>
+								<tr>
+									<td>,</td>
+									<td>Sele</td>
+									<td>Tager din sele på/af</td>
+								</tr>
+								<tr>
+									<td>K</td>
+									<td>Bagagerum</td>
+									<td>Åbner Bagagerum</td>
+								</tr>
+								<tr>
+									<td>F10</td>
+									<td>Spillerliste</td>
+									<td>Se hvem der er online</td>
+								</tr>
+								<tr>
+									<td>U</td>
+									<td>Fartbegrænser</td>
+									<td>Begrænser bilens hastighed</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<p id="link"></p>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.progress.js"></script>
+
+	<script type="text/javascript">
+		var progress1 = $("#loading").Progress({
+			percent: 0,
+			width: 250,
+			height: 30,
+			barColor: '#da0000',
+			fontSize: 16
+		});
+	</script>
+
+	<script src="assets/js/config.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/synn.js"></script>
+	<script src="assets/js/logger.js"></script>
+	<script src="assets/js/progressbar-main.js"></script>
+	<script src="assets/js/progressbar-handler.js"></script>
+	<script type="text/javascript">
+		Init();
+
+		//Cache to keep track of all progress values.
+		//This is need for the Math.max functions (so no backwards progressbars).
+		var progressCache = [];
+
+		function Init() {
+
+
+			if (config.progressBarType == 0) {
+				setInterval(UpdateSingle, 250);
+			}
+		}
+
+		//Update the single progressbar.
+		function UpdateSingle() {
+			UpdateTotalProgress();
+		}
+
+		// Update the total percentage loaded (above the progressbar on the right).
+		function UpdateTotalProgress() {
+			var total = GetTotalProgress();
+			if (progressCache[10] != null) {
+				total = Math.max(total, progressCache[10]);
+			}
+			progressCache[10] = total;
+
+			progress1.percent(progressCache[10]);
+		}
+	</script>
+</body>
+
+</html>

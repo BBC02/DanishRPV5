@@ -1,0 +1,70 @@
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <script src="jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="sweetalert.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/78879dfdec.js" crossorigin="anonymous"></script>
+    <script>
+    </script>
+    <style>
+        @font-face {
+            font-family: Roboto;
+            src: url(font/Roboto-Regular.ttf);
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="full-screen">
+        <div id="main_container"></div>
+        <audio id="audio" src="https://pic.pikbest.com/00/56/79/04e888piCYRV.mp3"></audio>
+
+    </div>
+
+    <script>
+        function SearchForEmployeee(employees) {
+            console.log("CALLED SEARCH")
+                // Declare variables
+            var input, filter, table, tr, td, i, txtValue;
+            if (document.getElementById("searchemployee") != null) {
+                input = document.getElementById("searchemployee");
+                htext = document.getElementById("handlingtext");
+
+                filter = input.value.toUpperCase();
+                table = document.getElementById("EmployeeTable");
+                tr = table.getElementsByTagName("tr");
+                nummer = employees.length
+                    // Loop through all table rows, and hide those who don't match the search query
+                for (i = 0; i < tr.length; i++) {
+                    td = tr[i].getElementsByTagName("td")[0];
+                    if (td) {
+                        txtValue = td.textContent || td.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                            console.log("FOUND:" + tr[i])
+                            htext.innerText = "Handling (" + nummer + ")"
+                        } else {
+                            tr[i].style.display = "none";
+                            console.log("NONE:" + tr[i])
+                            nummer = nummer - 1
+                            htext.innerText = "Handling (" + nummer + ")"
+
+                        }
+                    }
+                }
+            } else {
+                return;
+            }
+        }
+    </script>
+
+</body>

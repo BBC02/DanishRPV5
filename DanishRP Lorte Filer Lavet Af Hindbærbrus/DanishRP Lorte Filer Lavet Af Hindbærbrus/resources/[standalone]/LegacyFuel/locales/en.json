@@ -1,0 +1,18 @@
+{
+	"tank_full": "Bilen er fuld tanket",
+	"petrolcan_cannot_afford": "Du har ikke råd til at genopfylde din benzin dunk",
+	"refuel_cannot_afford": "Du har ikke råd til at genopfylde din bil",
+	"vehicle_far": "Din bil er for langt væk",
+	"pump_fuel_with_can": "Fjern din benzin dunk før at kunne bruge pumpen",
+	"fuel_help": "Tryk ~INPUT_C2939D45~ to fuel",
+	"petrolcan_help": "Press ~INPUT_C2939D45~ to buy or refill a fuel can",
+	"leave_vehicle": "Leave the vehicle to be able to start fueling",
+	"start_fueling": "Start Tankning",
+	"petrolcan_buy_or_refill": "Køb eller genopfyld din benzin dunk",
+	"fuel_station_blip": "Fuel station",
+	"not_enough_money": "Du har ikke penge nok! Mangler %s,- DKK",
+	"fuel_success": "Opfyldt til %s - %s,- DKK",
+	"petrolcan_refill": "Betalte %s,- for at genopfylde din benzin dunk",
+	"petrolcan_buy": "Betalte %s,- DKK for en benzin dunk",
+	"petrolcan_cannot_carry": "Du kan ikke bærer på dette"
+}

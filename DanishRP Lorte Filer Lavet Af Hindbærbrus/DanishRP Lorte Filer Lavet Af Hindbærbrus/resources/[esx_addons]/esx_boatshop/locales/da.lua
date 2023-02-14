@@ -1,0 +1,75 @@
+Locales['da'] = {
+    -- global menus
+    ['vehicle_belongs']         = 'Du har købt en ~o~%s~s~ med nummerpladen ~y~%s~s~ for ~g~%s DKK~s~.',
+    ['broke_company']           = 'Der er ikke nok penge på firma kontoen.',
+    ['buy_vehicle_shop']        = 'Vil du gerne købe %sx %s for %s DKK?',
+    ['buy_vehicle_amount']      = 'Hvor mange vil du købe?',
+    ['buy_vehicle']             = 'Køb både til forhandleren',
+    ['car_dealer']              = 'Bådforhandler',
+    ['shop_awaiting_model']     = 'Båden er ved at indlæse. Vent venligst...',
+    ['dealer_boss']             = 'Bådforhandler - Chefmenu',
+    ['return_provider']         = 'Sælg både til fabrikken',
+    ['invalid_amount']          = 'Ugyldigt beløb',
+    ['invoice_amount']          = 'Salgs beløb',
+    ['no']                      = 'Nej',
+    ['yes']                     = 'Ja',
+    ['no_players']              = 'Der er ingen spiller(e) i nærheden.',
+    ['not_enough_money']        = 'Du har ~r~ikke~w~ råd til dette.',
+    ['not_yours']               = 'Du ejer ~r~ikke~w~ denne båd.',
+    ['return_provider_menu']    = 'Bådforhandler - Sælg båd til fabrik',
+    ['sell_menu']               = 'Tryk ~INPUT_CONTEXT~ for at sælge din ~y~%s~s~ for ~g~%s DKK~s~',
+    ['set_vehicle_owner_sell']  = 'Sælg båd',
+    ['set_vehicle_owner_rent']  = 'Udlej båd',
+    ['shop_menu']               = 'Tryk ~INPUT_CONTEXT~ for at tilgå menuen',
+    ['generic_shopitem']        = '%s DKK',
+    ['vehicle_purchased']       = 'Du købte et båd til forhandleren.',
+    ['vehicle_set_owned']       = 'En ~o~%s~s~ med nummerpladen ~y~%s~s~ er blevet solgt til ~b~%s~s~ for ~g~%s DKK~s~.',
+    ['vehicle_sold_for']        = '~b~%s~s~ er blevet ~y~solgt~s~ for ~g~%s DKK~s~',
+    ['dealership']              = 'Bådforhandler',
+    ['dealer_customers']        = 'dealer customers',
+    ['boss_actions']            = 'Chef handlinger',
+    ['invalid_vehicle']         = 'Ugyldigt båd.',
+    ['no_vehicles_in_shop']     = 'Forhandleren her ikke flere både på lager.',
+    ['sell_vehicle_to_player']  = 'Vælg båd du vil sælge',
+    ['rent_vehicle_to_player']  = 'Vælg båd du vil udleje',
+    ['set_price_sell_vehicle']  = 'Pris på båd (Standard: %s)',
+    ['set_price_rent_vehicle']  = 'Udlejnings pris pr. dag',
+    ['customer_no_money']       = 'Kunden har ~r~ikke~w~ nok penge til at betale for bilen.',
+    ['too_low_price']           = 'Du kan ~r~ikke~w~ sælge båden til mindre end ~y~40%%~s~ af bilens pris!',
+    ['select_player']           = 'Vælg spiller',
+  
+    -- sold vehicles
+    ['boss_sold']               = 'Liste over solgte både',
+    ['customer_client']         = 'Kunde navn',
+    ['customer_model']          = 'Model',
+    ['customer_plate']          = 'Nummerplade',
+    ['customer_soldby']         = 'Solgt af',
+    ['customer_date']           = 'Dato',
+    ['customer_price']          = 'Solgt for',
+
+    -- Leasing
+    ['vehicle_set_rented']      = 'Båd ~y~%s~s~ er blevet lejet til ~b~%s~s~',
+    ['paid_rental']             = 'Du har betalt ~g~%s DKK~s~ for at leje en båd med nummerpladen ~y~%s~s~',
+    ['paid_rental_evicted']     = 'Du har ikke råd til at betale ~g~%s DKK~s~ i leje for din lejede båd med nummerpladen ~y~%s~s~. Båden er blevet retuneret til forhandleren.',
+    ['vehicle_menu']            = 'Tryk ~INPUT_CONTEXT~ for at aflevere tilbage din lejede båd.',
+    ['delivered']               = 'Båden er blevet ~g~leveret~s~ til forhandleren.',
+    ['not_rental']              = 'Dette er ikke en ~r~lejet båd~s~',
+    ['boss_rent']               = 'Se liste over udlejede både',
+    ['rent_vehicle']            = 'Bådforhandler - Udlejede både',
+  
+    -- Demo Menu
+    ['demo_menu_open_promp'] = 'Tryk ~INPUT_CONTEXT~ for at åbne demo menuen.',
+    ['demo_menu_title'] = 'Demo både',
+    ['demo_delete_promp'] = 'Tryk ~INPUT_CONTEXT~ for at fjerne demo båden.',
+    ['demo_delete_promp_veh'] = 'Tryk ~INPUT_CONTEXT~ for at parkere båden i garagen.',
+
+    -- Showcase Menu
+    ['showcase_menu_open_promp'] = 'Tryk ~INPUT_CONTEXT~ for at åbne kataloget.',
+    ['showcase_menu_title'] = 'Båd katalog',
+
+    -- Confirm Bought
+    ['confirm_buy_veh'] = 'Vil du købe en %s for %s DKK?',
+    ['confirm_rent_veh'] = 'Vil du leje en %s for %s DKK om dagen?',
+    ['denied_confirm'] = '~b~%s~s~ afviste betalingen på båden.',
+  }
+  

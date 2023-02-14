@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+
+.target-wrapper {
+	display: none;
+}
+
+.target-eye {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	font-size: 3vh;
+}
+
+.target-label-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: 2vh;
+	margin-top: -1.5vh;
+}
+
+.target-label {
+	list-style: none;
+	font-size: 1.3vh;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	text-transform: uppercase;
+	user-select: none;
+	white-space: nowrap;
+	vertical-align: middle;
+	padding-left: 4px;
+	line-height: 100%;
+}
+
+.target-icon {
+	color: rgb(185, 13, 18);
+}
+
+.target-item {
+	border: 0px;
+	margin-bottom: 2px;
+	width: 280px;
+	padding: 0px;
+	height: 19px;
+}
